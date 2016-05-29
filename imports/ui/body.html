@@ -1,0 +1,23 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Devices List</h1>
+      {{> loginButtons}}
+    </header>
+    {{#if currentUser}}
+      <form class="new-device">
+        <input type="text" name="text" placeholder="Type to add new devices" />
+      </form>
+      <ul>
+        {{#each devices}}
+          {{> device}}
+        {{/each}}
+      </ul>
+    {{else}}
+      <header>
+        Please log in to use app.
+      </header>  
+    {{/if}}
+  </div>
+</body>
+ 

@@ -1,0 +1,10 @@
+<template name="device">
+  <li class="{{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+ 
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+ 
+    <span class="text">{{text}}</span>
+    <input type="text" value="{{deviceupdate}}" class = "device-update"/>
+  </li>
+</template>
